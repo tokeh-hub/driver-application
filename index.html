@@ -1,0 +1,128 @@
+<html lang="en">
+<head>    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="form-header">
+            <h1>Driver Application Form</h1>
+        </header>
+        <hr>
+        <form action="/action_page.php">
+    <div class="driver-info">
+        <div class="info-header">
+            <h3>Driver Information</h3>
+            <hr>
+        </div>
+        <div class="info-body">
+                 <div class="name">
+                        <p>Name<span>*</span></p>
+                        <div class="inputs" id="name">
+                            <input type="text" placeholder="First Name"  required >
+                            <input type='text' placeholder="Last Name" required>
+                        </div>
+                </div>
+                <div class="email">
+                 <p>Email<span>*</span></p>
+                 <input type="email" placeholder="example@example.com" required>
+                </div>
+                <div class="address">
+                    <p>Address<span>*</span></p>
+                    <input type="text" placeholder="address 1" required>
+                    <input type="text" placeholder="address 2" required>
+                    <div class="address-inputs">
+                        <input type="text" placeholder="City" required>
+                        <input type="text" placeholder="State/Province" required>
+                    </div>
+                    <input type="text" placeholder="Postal/Zip Code" required>
+                </div>
+                <div class="phone">
+                    <p>Phone Number<span>*</span></p>
+                    <input type="tel" placeholder='07056784321' required>
+                </div>
+                   <div class="date">
+                    <p >Date of Birth<span>*</span></p>
+                    <input type='text' onfocus="(this.type='date')" placeholder="MM-DD-YY" required>
+                   </div>
+                   <!-- <div class="eligible">
+                       <p><b>Are you eligible to work with us in the UK?</b></p>
+                         <input type="radio" id="Yes" value='Yes' name='run' required>
+                         <label for='Yes'>Yes</label><br>
+                         <input type="radio" id="No" value='No' name='run' required>
+                         <label for='No'>No</label>
+                    </div> -->
+                
+                   <div class="work">
+                    <p><b>In Which cities can you work?</b></p>
+                    <div class="row">
+                    <div class="col">
+                        <p><input type="checkbox" id="Yes" required><span>Bronx</span></p>
+                        <p><input type="checkbox" id="Yes" required><span>Manhattan</span></p>
+                        <p><input type="checkbox" id="Yes" required><span>Los Angeles</span></p>
+                        <p><input type="checkbox" id="Yes" required><span>San Fransisco</span></p>
+                    </div>
+                    <div class="col">
+                        <p><input type="checkbox" id="Yes" required><span>Brooklyn</span></p>
+                        <p><input type="checkbox" id="Yes" required><span>Queen</span></p>
+                        <p><input type="checkbox" id="Yes" required><span>San Diego</span></p>
+                        <p><input type="checkbox" id="Yes" required><span>Oxford</span></p>
+                    </div>
+                </div>
+                </div>
+                <div class="vehicle">
+                    <p>Type of Vehicle<span>*</span></p>
+                    <select placeholder='Please Select'>
+                        <option>Car</option>
+                        <option>Truck</option>
+                        <option>Bus</option>
+                        <option>Train</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Driver License Number<span>*</span></p>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <p>Insurance Provider Number<span>*</span></p>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <p>Insurance Policy Number<span>*</span></p>
+                    <input type="text" required>
+                </div>       
+             
+        </div>
+    </div>
+    <div class="availability">
+        <div class="available-header">
+            <h3>Availability</h3>
+            <hr>
+        </div> 
+        <div class="available-info">
+             <div class="when">
+                 <p>When can you start?</p>
+                 <input type='text' onfocus="(this.type='date')" placeholder="MM-DD-YY" required>
+             </div>
+
+             
+        </div>
+    </div>
+    <hr>
+    <p>By signing this application form, I accept the following requirements of the agreement:
+        1. The information about driver's license is valid.
+         2. My vehicle is fully insured. 
+         3. I accept all the responsibilities for injury, damage and traffic violations. 
+        4. I acknowledge that I do not smoke in the vehicle.
+    </p>
+    <hr>
+    <div class="btn-container">
+        <button type="submit" class="btn">Submit</button>
+    </div>
+    
+ </form>
+</div>
+</body>
+</html>
